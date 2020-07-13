@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>AnimeBio</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat:wght@400;600;800&family=Playfair+Display+SC:wght@400;900&family=Tillana:wght@800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css2/styles2.css">
+    <link rel="icon" href="favicon/animebio-favicon3.ico">
+  </head>
+  <body>
+    <h1 class="main-title">AnimeBio</h1>
+  <%  for(var i = 0; i < enNames.length; i++){ %>
+
+    <div class="each-result">
+
+      <div class="headings">
+
+        <div class="heading-main">
+          <h1> <%= en_japNames[i] %></h1>
+        </div>
+
+        <div class="sub-heading">
+          <h3> <%= enNames[i] %> </h3>
+        </div>
+
+      </div>
+
+      <div class="image-synopsis">
+
+        <div class="poster-image">
+          <img src="<%= posterImages[i] %>" alt="poster-image">
+        </div>
+
+
+        <p class="age-rating"><b><u>Age Rating</u>: </b> <%= ageRatings[i] %></p>
+        <p class="episode-count"><b><u>Episode Count</u>: </b> <%= episodeCounts[i] %></p>
+        <p class="synopsis">  <b><u>Synopsis</u>: </b>  <%= synopsisList[i] %> </p>
+
+
+      </div>
+
+    </div>
+
+
+
+
+
+  <%  } %>
+
+    <div class="homepage-link">
+      <a href="/">Back to Homepage</a>
+    </div>
+  </body>
+</html>

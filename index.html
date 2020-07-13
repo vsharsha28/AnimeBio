@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>AnimeBio</title>
+    <link rel="stylesheet" href="css/styles-index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Merriweather&family=Playfair+Display+SC:wght@700;900&family=Tillana:wght@800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="icon" href="favicon/animebio-favicon3.ico">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+
+          var perfEntries = performance.getEntriesByType("navigation");
+          for (var i = 0; i < perfEntries.length; i++) {
+            console.log(perfEntries[i].type);
+          }
+
+          $('.input-query').data('holder', $('input').prop('placeholder'));     // .data() fn stores the $('input').prop('placeholder') value
+                                                                                //into "holder" and will return the value when called later as data("holder")
+          $('.input-query').focusin(function(){
+            $(this).prop('placeholder','');
+          });
+          $('input').focusout(function(){
+            $(this).attr('placeholder',$(this).data('holder'));
+          });
+
+
+          $('.btn').prop('disabled',true);
+          $('.input-query').keyup(function(){
+              $('.btn').prop('disabled', this.value.trim().length === 0 ? true : false);
+          })
+      });
+    </script>
+  </head>
+  <body>
+    <div class="container-fluid content-box">
+      <h1 class="main-title">AnimeBio</h1>
+      <h1>Get to know anime and expand your watchlist!</h1>
+      <div class="form-box">
+        <form action="/" method="post">
+          <div class="input-box">
+            <input class="input-query" type="text" name="textfilter" placeholder="Anime Name or a Search Filter" >
+          </div>
+
+          <button type="submit" class="btn btn-outline-light btn-lg" name="submit">Search</button>
+
+
+        </form>
+      </div>
+
+    </div>
+
+    <div class="footer">
+        <p class="copyright">© Sai Harsha Vadde</p>
+
+        <p class="credits">Thank you <a href="https://github.com/hummingbird-me" target="_blank">Kitsu API</a> for making this possible.</p>
+    </div>
+
+
+  </body>
+
+</html>
