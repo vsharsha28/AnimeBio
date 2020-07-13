@@ -16,8 +16,8 @@
             console.log(perfEntries[i].type);
           }
 
-          $('.input-query').data('holder', $('input').prop('placeholder'));     // .data() fn stores the $('input').prop('placeholder') value
-                                                                                //into "holder" and will return the value when called later as data("holder")
+          $('.input-query').data('holder', $('input').prop('placeholder'));     
+                                                                                
           $('.input-query').focusin(function(){
             $(this).prop('placeholder','');
           });
