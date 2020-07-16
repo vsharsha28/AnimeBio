@@ -98,14 +98,14 @@ input[type=text]:focus {
   padding: 50px;
 }
 
-@media (max-width: 600px) {
+@media screen and (max-width: 600px) {
 
   body {
     background-image: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)),
                       url("https://mfiles.alphacoders.com/673/673165.jpg");
     background-size: cover;
     text-align: center;
-
+    height: 100%;
   }
 
   h1 {
