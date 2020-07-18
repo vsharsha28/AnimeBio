@@ -1,129 +1,116 @@
 
 
 body {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
-                    url("https://i.pinimg.com/originals/54/f6/b6/54f6b6f2ae1a943856acc5d8479a1a9c.jpg");
-  color: white;
-  padding: 50px;
+    background-image: linear-gradient(rgba(0,0,0,.9),rgba(0,0,0,.9)),url(https://i.pinimg.com/originals/54/f6/b6/54f6b6f2ae1a943856acc5d8479a1a9c.jpg);
+    color: #fff;
+    padding: 50px
 }
 
-h1 {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 800;
+h1,h3 {
+    font-family: 'Montserrat',sans-serif;
+    font-weight: 800
 }
 
 h3 {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 600;
+    font-weight: 600
 }
 
 img {
-  border-radius: 8px;
+    border-radius: 8px
 }
 
 u {
-  font-size: 25px;
+    font-size: 25px
 }
 
 .main-title {
-  font-family: 'Playfair Display SC', serif;
-  font-weight: 900;
-  font-size: 70px;
-  padding-bottom: 50px;
-  margin-bottom: 50px;
-  text-align: center;
+    font-family: 'Playfair Display SC',serif;
+    font-weight: 900;
+    font-size: 70px;
+    padding-bottom: 50px;
+    margin-bottom: 50px;
+    text-align: center
 }
 
 .each-result {
-  float: none;
+    float: none
 }
 
 .image-synopsis {
-  padding-bottom: 60px;
+    padding-bottom: 60px
 }
 
 .homepage-link {
-  padding-top: 90px;
+    padding-top: 90px
 }
 
 .poster-image {
-  padding: 25px 25px 0 0;
-  display: inline;
-
+    padding: 25px 25px 0 0;
+    display: inline
 }
 
-.age-rating {
-  padding-top: 15px;
-  margin-bottom: 0;
-}
-
-.episode-count {
-  padding-top: 15px;
-  margin-bottom: 0;
+.age-rating,.episode-count {
+    padding-top: 15px;
+    margin-bottom: 0
 }
 
 .synopsis {
-  padding: 25px 0;
+    padding: 25px 0
 }
 
-@media screen and (max-width: 600px) {
-  body {
-    text-align: center;
-  }
+@media screen and (max-width:600px) {
+    body {
+        text-align: center
+    }
 
-  h1 {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
-    font-size: 15;
-    padding-top: 10px;
-  }
+    h1,h3 {
+        font-family: 'Montserrat',sans-serif;
+        font-weight: 400
+    }
 
-  h3 {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
-    font-size: 10;
-  }
+    h1 {
+        font-size: 15;
+        padding-top: 10px
+    }
 
-  img {
-    padding-bottom: 10px;
-  }
+    h3 {
+        font-size: 10
+    }
 
-  p {
-    font-size: 15px;
-  }
+    img {
+        padding-bottom: 10px
+    }
 
-  u {
-    font-size: 17px;
-  }
+    p {
+        font-size: 15px
+    }
 
-  .poster-image {
-    padding: 25px 25px 25px 0;
-    display: inline-block;
-    float: none;
-    margin-bottom: 0;
-  }
+    u {
+        font-size: 17px
+    }
 
-  .image-synopsis {
-    padding-bottom: 25px;
-  }
+    .poster-image {
+        padding: 25px 25px 25px 0;
+        display: inline-block;
+        float: none;
+        margin-bottom: 0
+    }
 
-  .homepage-link {
-    margin-top: 10px;
-  }
+    .image-synopsis {
+        padding-bottom: 25px
+    }
 
-  .age-rating {
-    padding-top: 0;
-    margin-bottom: 5px;
-  }
+    .homepage-link {
+        margin-top: 10px
+    }
 
-  .episode-count {
-    padding-top: 0;
-    margin-bottom: 5px;
-  }
+    .age-rating,.episode-count {
+        padding-top: 0;
+        margin-bottom: 5px
+    }
 
-  .synopsis {
-    padding: 0;
-    margin-bottom: 5px;
-  }
-
+    .synopsis {
+        padding: 0;
+        margin-bottom: 5px
+    }
 }
